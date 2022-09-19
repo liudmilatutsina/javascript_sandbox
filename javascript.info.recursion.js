@@ -27,7 +27,7 @@ function factorialRecursion (number){
 
 // Fibonacci
 // with help of loop (more effective as better performance)
-function loopFibonacci (number) {
+function fibonacciLoop (number) {
   let n1 = 1; // first number of Fibonacci is 1
   let n2 = 1; // second number of Fibonacci is 1
 
@@ -41,8 +41,8 @@ function loopFibonacci (number) {
 }
 
 // with help of recursion
-function recursionFibonacci (number) {
-  return (number <= 1) ? number : recursionFibonacci(number - 1) + recursionFibonacci(number - 2);
+function fibonacciRecursion (number) {
+  return (number <= 1) ? number : fibonacciRecursion(number - 1) + fibonacciRecursion(number - 2);
 }
 
 
@@ -101,5 +101,3 @@ function outputListReversedRecursion (list) {
 
   console.log(list.value);
 }
-
-outputListReversedRecursion(list);
